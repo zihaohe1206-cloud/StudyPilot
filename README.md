@@ -15,6 +15,18 @@ StudyPilot 是一个用于从前端开发转向后端 + AI Agent 开发的学习
 3. `docs/superpowers/specs/2026-07-09-studypilot-design.md`
 4. `docs/project-memory.md` 里的“下一步”
 
+## GitHub 要求
+
+这个项目最终必须提交到 GitHub，作为作品集和简历证明材料。
+
+要求：
+
+- 保持清晰的 git 提交历史。
+- 每个阶段完成后都要提交一次有意义的 commit。
+- README 要能让面试官快速理解项目目标、架构、启动方式和亮点。
+- 最终 GitHub 仓库应包含可运行代码、核心文档、截图或 demo、RAG 评估结果和简历亮点说明。
+- 如果仓库暂时不公开，也要保证本地仓库可以随时推送到 GitHub。
+
 ## 计划技术栈
 
 - 前端：Vue 3、TypeScript、Pinia、Vue Router
@@ -42,4 +54,3 @@ StudyPilot 是一个用于从前端开发转向后端 + AI Agent 开发的学习
 - `docs/sessions/YYYY-MM-DD-HHMM.md`
 - `docs/03-resume-points.md`
 - `docs/04-deep-dive-questions.md`
-

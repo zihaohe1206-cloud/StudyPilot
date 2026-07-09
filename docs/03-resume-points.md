@@ -21,6 +21,8 @@ StudyPilot：基于 RAG 和多 Agent 编排的个人学习助理。
 
 ## 后续要收集的证据
 
+- GitHub 仓库链接。
+- 清晰的 git 提交历史。
 - README 架构图。
 - API 示例。
 - 截图或 demo GIF。
@@ -28,4 +30,3 @@ StudyPilot：基于 RAG 和多 Agent 编排的个人学习助理。
 - AgentRun 轨迹样例。
 - 测试输出。
 - 部署命令。
-
