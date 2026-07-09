@@ -1,35 +1,35 @@
-# ADR-0003: Treat Documentation as Project Memory
+# ADR-0003：把文档作为项目记忆
 
-Date: 2026-07-09
+日期：2026-07-09
 
-## Status
+## 状态
 
-Accepted
+已接受
 
-## Context
+## 背景
 
-The project may be developed across multiple AI windows and sessions. New windows often lack context, which can cause repeated explanation, inconsistent decisions, or accidental rework.
+这个项目可能会跨多个 AI 窗口和多个开发会话推进。新窗口经常缺少上下文，容易导致重复解释、决策不一致或误改。
 
-## Decision
+## 决策
 
-Maintain a lightweight documentation system:
+维护轻量文档系统：
 
-- `docs/project-memory.md` for current state.
-- `docs/sessions/` for AI conversation summaries.
-- `docs/devlog/` for daily engineering logs.
-- `docs/decisions/` for architecture decisions.
-- `docs/03-resume-points.md` and `docs/04-deep-dive-questions.md` for portfolio preparation.
+- `docs/project-memory.md` 记录当前状态。
+- `docs/sessions/` 记录 AI 对话摘要。
+- `docs/devlog/` 记录每日工程日志。
+- `docs/decisions/` 记录架构决策。
+- `docs/03-resume-points.md` 和 `docs/04-deep-dive-questions.md` 记录作品集和面试准备。
 
-## Consequences
+## 影响
 
-Positive:
+正向影响：
 
-- New AI windows can continue quickly.
-- Technical decisions become easier to defend.
-- Resume writing becomes incremental.
+- 新 AI 窗口可以更快接上。
+- 技术决策更容易被解释和防守。
+- 简历内容可以边做边沉淀。
 
-Tradeoffs:
+取舍：
 
-- Requires a few minutes of documentation after each session.
-- Docs can become stale if not updated.
+- 每次会话结束需要多花几分钟更新文档。
+- 如果不维护，文档会过期。
 

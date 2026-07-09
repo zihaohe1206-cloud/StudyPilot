@@ -1,92 +1,92 @@
-# Learning Roadmap
+# 学习路线
 
-The learning method is project-first. Do not wait to finish a full backend course before building.
+学习方式是项目优先。不要等完整学完后端课程再开始做。
 
-## Phase 0: Project Foundation
+## Phase 0：项目基础
 
-Learn enough to:
+做到：
 
-- Understand repository structure.
-- Maintain project documentation.
-- Explain the product goal and architecture.
+- 理解仓库结构。
+- 维护项目文档。
+- 能讲清产品目标和技术架构。
 
-## Phase 1: Backend Basics
+## Phase 1：后端基础
 
-Build:
+要做：
 
-- FastAPI app.
-- PostgreSQL models.
-- JWT auth.
-- File upload.
-- Docker Compose.
+- FastAPI 应用。
+- PostgreSQL 模型。
+- JWT 登录鉴权。
+- 文件上传。
+- Docker Compose。
 
-Learn:
+要学：
 
-- FastAPI route design.
-- Pydantic schemas.
-- SQL basics.
-- Backend error handling.
+- FastAPI 路由设计。
+- Pydantic schema。
+- SQL 基础。
+- 后端错误处理。
 
-## Phase 2: RAG
+## Phase 2：RAG
 
-Build:
+要做：
 
-- Document parsing.
-- Chunking.
-- Embeddings.
-- Vector retrieval.
-- Cited answers.
+- 文档解析。
+- 文本切分。
+- embedding。
+- 向量检索。
+- 带引用回答。
 
-Learn:
+要学：
 
-- Retrieval tradeoffs.
-- Context windows.
-- Prompt constraints.
-- Citation and refusal design.
+- 检索策略取舍。
+- 上下文窗口。
+- Prompt 约束。
+- 引用和拒答设计。
 
-## Phase 3: Learning Product
+## Phase 3：学习产品闭环
 
-Build:
+要做：
 
-- Study plans.
-- Quiz generation.
-- Answer grading.
-- Wrong-answer review.
+- 学习计划。
+- 测验生成。
+- 答案批改。
+- 错题复习。
 
-Learn:
+要学：
 
-- Data modeling for workflows.
-- Structured AI outputs.
-- User progress tracking.
+- 工作流数据建模。
+- AI 结构化输出。
+- 用户学习进度跟踪。
 
-## Phase 4: Agent Orchestration
+## Phase 4：Agent 编排
 
-Build:
+要做：
 
-- LangGraph workflows.
-- Router node.
-- Specialized agent nodes.
-- AgentRun traces.
+- LangGraph 工作流。
+- Router 节点。
+- 专用 Agent 节点。
+- AgentRun 轨迹。
 
-Learn:
+要学：
 
-- State machines.
-- Multi-agent boundaries.
-- Fallback and retry.
-- Cost and latency control.
+- 状态机。
+- 多 Agent 边界。
+- 失败兜底和重试。
+- 成本和延迟控制。
 
-## Phase 5: Portfolio Polish
+## Phase 5：作品集打磨
 
-Build:
+要做：
 
-- README.
-- Demo screenshots.
-- Evaluation report.
-- Tests.
-- Deployment notes.
+- README。
+- 演示截图。
+- 评估报告。
+- 测试。
+- 部署说明。
 
-Learn:
+要学：
 
-- How to explain technical decisions.
-- How to prepare for interview deep dives.
+- 如何解释技术决策。
+- 如何准备面试深挖。
 

@@ -1,22 +1,22 @@
-# Devlog: YYYY-MM-DD
+# 开发日志：YYYY-MM-DD
 
-## Done
-
-- 
-
-## Learned
+## 已完成
 
 - 
 
-## Decisions
+## 学到的内容
 
 - 
 
-## Problems
+## 决策
 
 - 
 
-## Next
+## 问题
+
+- 
+
+## 下一步
 
 - 
 

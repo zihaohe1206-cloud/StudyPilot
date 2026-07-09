@@ -1,6 +1,6 @@
-# API Draft
+# API 草案
 
-This is a draft and should be updated when implementation begins.
+这是草案，开始实现后需要持续更新。
 
 ## Auth
 

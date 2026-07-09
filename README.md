@@ -1,34 +1,41 @@
 # StudyPilot
 
-StudyPilot is a learning project for moving from frontend development to backend plus AI agent development.
+StudyPilot 是一个用于从前端开发转向后端 + AI Agent 开发的学习型项目。
 
-The product goal is a personal learning assistant that can ingest study materials, answer questions with citations, generate study plans, create quizzes, grade answers, and schedule review through a multi-agent workflow.
+项目目标是做一个个人学习助理：它可以导入学习资料，基于资料进行带引用的问答，生成学习计划，生成测验，批改答案，并通过多 Agent 工作流安排复习。
 
-## Current Status
+## 当前状态
 
-Planning and documentation stage. No application code has been written yet.
+规划和文档阶段。还没有编写应用代码。
 
-Start here when opening this project in a new AI window:
+新开 AI 窗口时，先读这些文件：
 
-1. Read `docs/project-memory.md`.
-2. Read the latest file in `docs/sessions/`.
-3. Read `docs/superpowers/specs/2026-07-09-studypilot-design.md`.
-4. Continue from the "Next Actions" section in `docs/project-memory.md`.
+1. `docs/project-memory.md`
+2. `docs/sessions/` 里的最新会话摘要
+3. `docs/superpowers/specs/2026-07-09-studypilot-design.md`
+4. `docs/project-memory.md` 里的“下一步”
 
-## Planned Stack
+## 计划技术栈
 
-- Frontend: Vue 3, TypeScript, Pinia, Vue Router
-- Backend: Python, FastAPI
-- Database: PostgreSQL
-- Async/cache: Redis plus RQ or Celery
-- RAG: pgvector or Qdrant
-- Agent orchestration: LangGraph
-- Deployment: Docker Compose
-- Testing: pytest, focused frontend tests
+- 前端：Vue 3、TypeScript、Pinia、Vue Router
+- 后端：Python、FastAPI
+- 数据库：PostgreSQL
+- 异步任务/缓存：Redis + RQ 或 Celery
+- RAG：pgvector 或 Qdrant
+- Agent 编排：LangGraph
+- 部署：Docker Compose
+- 测试：pytest，少量关键前端测试
 
-## Documentation Rules
+## 记录语言规范
 
-Every meaningful development session should update:
+默认使用中文记录项目内容：
+
+- 文档、开发日志、会话摘要、ADR 默认中文。
+- 代码注释默认中文，只在逻辑不够直观时写简短注释。
+- 变量名、函数名、类名、API 路径、库名、框架名保留英文。
+- 不写“赋值给变量”这类没有信息量的注释。
+
+## 每次开发结束必须更新
 
 - `docs/project-memory.md`
 - `docs/devlog/YYYY-MM-DD.md`

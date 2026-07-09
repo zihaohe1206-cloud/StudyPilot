@@ -1,35 +1,35 @@
-# Project Brief
+# 项目简介
 
-## One-Line Description
+## 一句话说明
 
-StudyPilot is a personal learning assistant that uses RAG and multi-agent workflows to help users study from their own materials.
+StudyPilot 是一个基于 RAG 和多 Agent 工作流的个人学习助理，用来帮助用户从自己的学习资料中学习、提问、测验和复习。
 
-## Target Role
+## 目标岗位
 
-AI application developer, AI agent developer, or frontend developer transitioning into backend plus AI engineering.
+AI 应用开发、AI Agent 开发，或从前端转向后端 + AI 工程的岗位。
 
-## Why This Project
+## 为什么做这个项目
 
-This project combines frontend strengths with backend and AI skills that are visible in interviews:
+这个项目可以把你的前端优势和需要补的后端/AI 能力结合起来：
 
-- Backend APIs and data modeling.
-- File ingestion and async processing.
-- RAG quality, citations, and evaluation.
-- Multi-agent orchestration with explicit state and routing.
-- Engineering documentation and decision records.
+- 后端 API 和数据建模。
+- 文件导入和异步处理。
+- RAG 的引用、拒答和评估。
+- 基于显式状态和路由的多 Agent 编排。
+- 工程文档和技术决策记录。
 
 ## MVP
 
-The MVP should let a user:
+MVP 应该允许用户：
 
-1. Sign in.
-2. Upload material.
-3. Ask questions.
-4. Receive cited answers.
-5. Generate a simple study plan.
-6. Generate and answer quiz questions.
+1. 登录。
+2. 上传学习资料。
+3. 基于资料提问。
+4. 获得带引用的回答。
+5. 生成简单学习计划。
+6. 生成测验题并作答。
 
-## Portfolio Promise
+## 作品集目标
 
-The project should be easy to demo, easy to explain, and hard to dismiss as a thin API wrapper.
+这个项目要容易演示、容易讲清楚，并且不能被面试官一眼看成“只是套了一个 API”。
 

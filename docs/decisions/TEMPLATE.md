@@ -1,30 +1,30 @@
-# ADR-XXXX: Title
+# ADR-XXXX：标题
 
-Date: YYYY-MM-DD
+日期：YYYY-MM-DD
 
-## Status
+## 状态
 
-Proposed | Accepted | Superseded
+提议中 | 已接受 | 已替代
 
-## Context
+## 背景
 
-What problem or choice led to this decision?
+是什么问题或选择引出了这个决策？
 
-## Decision
+## 决策
 
-What was decided?
+最终决定是什么？
 
-## Rationale
+## 理由
 
-Why is this the right tradeoff now?
+为什么现在这是合适的取舍？
 
-## Consequences
+## 影响
 
-Positive:
+正向影响：
 
 - 
 
-Tradeoffs:
+取舍：
 
 - 
 

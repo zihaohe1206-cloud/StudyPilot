@@ -1,29 +1,29 @@
-# ADR-0001: Use Project-First Learning
+# ADR-0001：采用项目优先学习路线
 
-Date: 2026-07-09
+日期：2026-07-09
 
-## Status
+## 状态
 
-Accepted
+已接受
 
-## Context
+## 背景
 
-The developer has a frontend background and wants to grow into backend plus AI agent development. Studying official documentation linearly is slow and hard to retain.
+开发者有前端背景，希望转向后端 + AI Agent 开发。线性阅读官方文档速度慢，也不容易记住。
 
-## Decision
+## 决策
 
-Use Route B: build StudyPilot directly and learn missing backend and AI knowledge through the features being implemented.
+采用路线 B：直接构建 StudyPilot，在实现功能的过程中补后端和 AI 知识。
 
-## Consequences
+## 影响
 
-Positive:
+正向影响：
 
-- Faster feedback.
-- Better memory because each concept is tied to a real feature.
-- Earlier portfolio evidence.
+- 反馈更快。
+- 每个知识点都绑定真实功能，更容易记住。
+- 更早产出作品集证据。
 
-Tradeoffs:
+取舍：
 
-- Some theory will be learned later than in a traditional course.
-- Requires discipline to document decisions and revisit weak areas.
+- 部分理论会晚于传统课程路线学习。
+- 需要坚持记录决策并回头补薄弱点。
 

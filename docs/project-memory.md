@@ -1,60 +1,67 @@
-# Project Memory
+# 项目记忆
 
-This file is the short, durable memory for new AI windows and future development sessions. Keep it concise and update it after every meaningful session.
+这个文件是给未来的新 AI 窗口和后续开发会话看的短期项目记忆。保持简短、准确，每次有实质进展后都要更新。
 
-## Project
+## 项目
 
-StudyPilot: a personal learning assistant built as a portfolio project for backend plus AI agent development.
+StudyPilot：一个个人学习助理项目，用来作为后端 + AI Agent 开发方向的作品集项目。
 
-## Goal
+## 目标
 
-Build an end-to-end AI learning system that shows practical backend engineering, RAG, multi-agent orchestration, evaluation, and product thinking.
+做出一个端到端 AI 学习系统，展示后端工程、RAG、多 Agent 编排、评估和产品思维。
 
-The project should be strong enough to support resume bullets and technical interview deep dives.
+这个项目要能支撑简历亮点和面试深挖，而不是只做一个薄薄的 LLM API 包装。
 
-## Chosen Route
+## 选择的路线
 
-Route B: build the project directly and learn missing backend/AI knowledge as each feature requires it.
+路线 B：直接做项目，项目缺什么就补什么后端和 AI 知识。
 
-## Planned Stack
+## 计划技术栈
 
-- Vue 3 + TypeScript for frontend
-- FastAPI for backend
-- PostgreSQL for core data
-- Redis for async jobs and caching
-- pgvector or Qdrant for vector search
-- LangGraph for multi-agent orchestration
-- Docker Compose for local startup
+- Vue 3 + TypeScript 做前端
+- FastAPI 做后端
+- PostgreSQL 存核心业务数据
+- Redis 做异步任务和缓存
+- pgvector 或 Qdrant 做向量检索
+- LangGraph 做多 Agent 编排
+- Docker Compose 做本地启动
 
-## Key Decisions
+## 记录语言规范
 
-- Use Python/FastAPI instead of Node as the primary backend path because Python has stronger AI agent, RAG, and evaluation ecosystem support.
-- Build a real project from week one instead of completing a full backend course first.
-- Keep documentation as a first-class part of the project so a new AI window can understand context quickly.
-- Treat multi-agent design as a controlled workflow problem, not as a reason to call many agents for every request.
+- 文档、开发日志、会话摘要、ADR 默认用中文。
+- 代码注释默认用中文，但只在解释复杂逻辑或关键取舍时写。
+- 代码标识符、API 路径、框架名、库名保留英文。
 
-## Current Progress
+## 关键决策
 
-- Project folder created at `C:\Users\18316\Desktop\StudyPilot`.
-- Documentation structure created.
-- Initial design spec, project memory, resume points, deep-dive questions, and ADRs are being written.
-- No application code has been created yet.
+- 主后端选择 Python/FastAPI，而不是 Node，因为 Python 在 AI Agent、RAG、评估和文档处理生态上更强。
+- 不先完整刷完后端课程，而是从第一周开始做真实项目。
+- 把文档作为项目的一部分维护，让新 AI 窗口可以快速接上上下文。
+- 多 Agent 不是为了炫技，而是作为可控工作流来处理学习计划、检索、讲解、出题、批改和复习。
 
-## Next Actions
+## 当前进度
 
-1. Review `docs/superpowers/specs/2026-07-09-studypilot-design.md`.
-2. Confirm whether to start implementation planning.
-3. If approved, create an implementation plan for Phase 0 and Phase 1.
-4. Scaffold the monorepo with `apps/web` and `apps/api`.
+- 项目文件夹已创建：`C:\Users\18316\Desktop\StudyPilot`。
+- 已创建文档结构。
+- 已写入初始设计说明、项目记忆、简历亮点、面试深挖题和 ADR。
+- 已统一约定：项目记录和注释默认使用中文。
+- 还没有创建应用代码。
 
-## Open Questions
+## 下一步
 
-- Use pgvector inside PostgreSQL first, or start with Qdrant?
-- Use RQ or Celery for background jobs?
-- Which LLM provider should be used for the first working version?
-- Should deployment target be local-only first, or a small cloud server later?
+1. 审阅 `docs/superpowers/specs/2026-07-09-studypilot-design.md`。
+2. 确认是否开始写 Phase 0 和 Phase 1 的实施计划。
+3. 如果确认，创建详细实施计划。
+4. 脚手架化 `apps/web` 和 `apps/api`。
 
-## Latest Session Summary
+## 待确认问题
 
-2026-07-09: Confirmed Route B and created the initial project documentation plan.
+- 第一版向量库用 PostgreSQL + pgvector，还是独立 Qdrant？
+- 后台任务用 RQ 还是 Celery？
+- 第一版使用哪个 LLM provider？
+- 先只做本地部署，还是后期部署到轻量云服务器？
+
+## 最新会话摘要
+
+2026-07-09：确认路线 B，创建初始项目文档，并统一约定项目记录、开发日志、会话摘要、ADR 和代码注释默认用中文。
 

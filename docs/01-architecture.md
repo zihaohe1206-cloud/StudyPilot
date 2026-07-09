@@ -1,9 +1,9 @@
-# Architecture
+# 架构说明
 
-## High-Level View
+## 高层结构
 
 ```text
-User
+用户
   -> Vue Web App
   -> FastAPI Backend
   -> PostgreSQL
@@ -12,52 +12,52 @@ User
   -> LLM Provider
 ```
 
-## Backend Modules
+## 后端模块
 
-Planned modules inside `apps/api`:
+计划在 `apps/api` 中拆分这些模块：
 
-- `auth`: registration, login, JWT, current user dependency.
-- `materials`: upload, metadata, parsing status.
-- `ingestion`: parsing, chunking, embedding jobs.
-- `rag`: retrieval, context building, answer generation.
-- `study`: study plans, tasks, progress.
-- `quiz`: quiz generation, attempts, grading.
-- `agents`: LangGraph workflows and node implementations.
-- `evals`: scripts and fixtures for RAG evaluation.
+- `auth`：注册、登录、JWT、当前用户依赖。
+- `materials`：资料上传、元数据、解析状态。
+- `ingestion`：解析、切分、embedding 任务。
+- `rag`：检索、上下文构建、回答生成。
+- `study`：学习计划、任务、进度。
+- `quiz`：测验生成、作答记录、批改。
+- `agents`：LangGraph 工作流和节点实现。
+- `evals`：RAG 评估脚本和样例。
 
-## Frontend Areas
+## 前端页面
 
-Planned areas inside `apps/web`:
+计划在 `apps/web` 中实现这些区域：
 
-- Auth pages.
-- Material library.
-- Chat/RAG page with citations.
-- Study plan page.
-- Quiz page.
-- Review dashboard.
-- Agent run/debug view if time allows.
+- 登录/注册页面。
+- 学习资料库。
+- 带引用展示的 RAG 对话页。
+- 学习计划页。
+- 测验页。
+- 复习看板。
+- 如果时间允许，增加 Agent run 调试视图。
 
-## Data Flow: Upload
+## 数据流：资料上传
 
 ```text
-Upload file
-  -> create StudyMaterial row
-  -> enqueue ingestion job
-  -> parse document
-  -> chunk text
-  -> create embeddings
-  -> store chunks
-  -> mark material ready
+上传文件
+  -> 创建 StudyMaterial 记录
+  -> 投递 ingestion 任务
+  -> 解析文档
+  -> 切分文本
+  -> 创建 embedding
+  -> 保存 chunks
+  -> 标记资料可用
 ```
 
-## Data Flow: Question Answering
+## 数据流：资料问答
 
 ```text
-User question
-  -> Router classifies request
-  -> Retriever fetches chunks
-  -> Tutor generates answer with citations
-  -> API stores messages and AgentRun trace
-  -> Frontend renders answer and sources
+用户提问
+  -> Router 判断请求类型
+  -> Retriever 检索相关 chunks
+  -> Tutor 生成带引用回答
+  -> API 保存消息和 AgentRun 轨迹
+  -> 前端展示回答和来源
 ```
 

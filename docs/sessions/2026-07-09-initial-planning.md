@@ -1,31 +1,34 @@
-# Session Summary: Initial Planning
+# 会话摘要：初始规划
 
-Date: 2026-07-09
+日期：2026-07-09
 
-## User Goal
+## 用户目标
 
-The user wants to learn backend plus AI agent development from a frontend background and build a resume-worthy project.
+用户有前端背景，希望学习后端 + AI Agent 开发，并做出一个可以写进简历、经得起深挖的项目。
 
-## Conversation Summary
+## 对话摘要
 
-- Compared route options and selected Route B: directly build a project and learn missing knowledge as needed.
-- Decided the project should be StudyPilot, a personal learning assistant using RAG and multi-agent workflows.
-- Emphasized that the project must be understandable by future AI windows through documentation and session summaries.
-- Emphasized that resume points must be supported by real implementation details and interview deep-dive answers.
+- 对比了不同学习路线，并选择路线 B：直接做项目，缺什么补什么。
+- 确定项目为 StudyPilot，一个基于 RAG 和多 Agent 工作流的个人学习助理。
+- 强调项目必须通过文档和会话摘要让未来新开的 AI 窗口快速理解上下文。
+- 强调简历亮点必须有真实实现细节支撑，不能只停留在概念。
+- 用户要求项目记录和注释统一使用中文，因此新增中文记录规范。
 
-## Work Done
+## 已完成工作
 
-- Created initial project documentation in `C:\Users\18316\Desktop\StudyPilot`.
-- Added design spec, project memory, architecture notes, learning roadmap, resume points, deep-dive questions, ADRs, devlog, and this session summary.
+- 在 `C:\Users\18316\Desktop\StudyPilot` 创建初始项目文档。
+- 添加设计说明、项目记忆、架构说明、学习路线、简历亮点、深挖问题、ADR、开发日志和本会话摘要。
+- 将文档统一改为中文。
+- 新增 ADR-0004：项目记录和代码注释默认使用中文。
 
-## Next Window Should Read
+## 新窗口应该先读
 
 1. `README.md`
 2. `docs/project-memory.md`
 3. `docs/superpowers/specs/2026-07-09-studypilot-design.md`
 4. `docs/04-deep-dive-questions.md`
 
-## Next Action
+## 下一步
 
-Ask the user to review the design. If approved, create a detailed implementation plan for Phase 0 and Phase 1 before writing application code.
+请用户审阅设计。如果确认，就先写 Phase 0 和 Phase 1 的详细实施计划，再开始写应用代码。
 

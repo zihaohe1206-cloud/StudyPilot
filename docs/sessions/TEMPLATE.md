@@ -1,36 +1,36 @@
-# Session Summary: <Title>
+# 会话摘要：标题
 
-Date: YYYY-MM-DD
+日期：YYYY-MM-DD
 
-## Goal
+## 目标
 
-What this session tried to accomplish.
+这次会话想完成什么。
 
-## Context Read
+## 已阅读上下文
 
-- Files read before making changes.
-- Important prior decisions considered.
+- 修改前读过哪些文件。
+- 参考了哪些已有决策。
 
-## Work Done
+## 已完成工作
 
-- Files changed.
-- Features implemented.
-- Tests or checks run.
+- 修改了哪些文件。
+- 实现了哪些功能。
+- 运行了哪些测试或检查。
 
-## Decisions
+## 决策
 
-- Decision and reason.
+- 决策和原因。
 
-## Problems
+## 问题
 
-- Bug, blocker, uncertainty, or tradeoff.
+- Bug、阻塞、疑问或取舍。
 
-## Next Actions
+## 下一步
 
-1. Next concrete step.
-2. Next concrete step.
+1. 下一个具体动作。
+2. 下一个具体动作。
 
-## Handoff Note
+## 交接说明
 
-Short note for a new AI window.
+给新 AI 窗口看的简短说明。
 

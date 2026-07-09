@@ -1,42 +1,42 @@
-# RAG Evaluation Set
+# RAG 评估集
 
-This file will become the fixed test set for evaluating retrieval and answer quality.
+这个文件后续会成为固定测试集，用来评估检索和回答质量。
 
-## Evaluation Fields
+## 评估字段
 
-For each case, record:
+每个 case 记录：
 
-- Question.
-- Source material.
-- Expected source chunk or section.
-- Expected answer points.
-- Actual retrieved chunks.
-- Actual answer.
-- Citation quality.
-- Hallucination risk.
-- Notes.
+- 问题。
+- 来源资料。
+- 期望命中的来源 chunk 或章节。
+- 期望答案要点。
+- 实际检索到的 chunks。
+- 实际回答。
+- 引用质量。
+- 幻觉风险。
+- 备注。
 
-## Example Template
+## 示例模板
 
 ```markdown
 ### Case 001
 
-Question:
+问题：
 
-Source material:
+来源资料：
 
-Expected source:
+期望来源：
 
-Expected answer points:
+期望答案要点：
 
-Actual retrieved chunks:
+实际检索 chunks：
 
-Actual answer:
+实际回答：
 
-Citation quality:
+引用质量：
 
-Hallucination risk:
+幻觉风险：
 
-Notes:
+备注：
 ```
 

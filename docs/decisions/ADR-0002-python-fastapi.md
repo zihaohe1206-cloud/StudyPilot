@@ -1,34 +1,34 @@
-# ADR-0002: Use Python and FastAPI for Backend
+# ADR-0002：后端选择 Python 和 FastAPI
 
-Date: 2026-07-09
+日期：2026-07-09
 
-## Status
+## 状态
 
-Accepted
+已接受
 
-## Context
+## 背景
 
-The project targets AI agent development rather than only traditional web backend development. The developer already knows JavaScript and Vue.
+项目目标是 AI Agent 开发，而不是单纯传统 Web 后端。开发者已经具备 JavaScript 和 Vue 基础。
 
-## Decision
+## 决策
 
-Use Python and FastAPI as the primary backend stack.
+主后端技术栈选择 Python 和 FastAPI。
 
-## Rationale
+## 理由
 
-- Python has strong support for LangGraph, RAG, evaluation, document processing, and AI application tooling.
-- FastAPI is approachable for frontend developers because API contracts are explicit and development is fast.
-- JavaScript skills remain useful for the Vue frontend and product experience.
+- Python 对 LangGraph、RAG、评估、文档处理和 AI 应用工具支持更强。
+- FastAPI 对前端开发者比较友好，API 契约清晰，迭代速度快。
+- 原有 JavaScript 能力仍然可以用于 Vue 前端和产品体验。
 
-## Consequences
+## 影响
 
-Positive:
+正向影响：
 
-- Shorter path to agent and RAG implementation.
-- Better alignment with AI application roles.
+- 更快进入 Agent 和 RAG 实现。
+- 更贴近 AI 应用开发岗位。
 
-Tradeoffs:
+取舍：
 
-- Need to learn Python backend conventions.
-- Existing JavaScript backend knowledge will not transfer one-to-one.
+- 需要学习 Python 后端约定。
+- 现有 JavaScript 后端经验不能完全直接迁移。
 

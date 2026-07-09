@@ -1,54 +1,54 @@
-# Deep-Dive Questions
+# 面试深挖问题
 
-Use this file to prepare interview answers as the project grows.
+这个文件用来随着项目开发持续准备面试答案。
 
-## Backend
+## 后端
 
-Q: Why FastAPI instead of Node?
+Q：为什么后端选 FastAPI，而不是继续用 Node？
 
-A: The project targets AI agent development. Python has stronger ecosystem support for LangGraph, RAG tooling, evaluation, document parsing, and model-related workflows. FastAPI also gives clear API structure and fast iteration.
+A：这个项目目标是 AI Agent 开发。Python 在 LangGraph、RAG 工具、评估、文档解析和 AI 应用生态上更强。FastAPI 的 API 结构清晰、迭代快，也适合前端背景转后端。
 
-Q: Why use background jobs for ingestion?
+Q：为什么资料导入要用后台任务？
 
-A: Parsing and embedding can take seconds or minutes for larger files. Running this in the request path would cause timeouts and poor user experience. A job queue lets the API return quickly and update material status asynchronously.
+A：文档解析和 embedding 对大文件来说可能需要几秒甚至更久。如果放在请求链路里，会导致超时和体验差。任务队列可以让 API 先返回，后台更新资料处理状态。
 
 ## RAG
 
-Q: Why use citations?
+Q：为什么回答必须带引用？
 
-A: Learning workflows need trust. Citations let the user verify answers against source material and reduce the impact of unsupported model generation.
+A：学习场景需要可信度。引用可以让用户回到原文验证答案，也能降低模型生成无依据内容的影响。
 
-Q: How do you handle questions not covered by the material?
+Q：如果资料里没有答案，怎么处理？
 
-A: The answer generator should refuse or ask for clarification when retrieval does not provide enough evidence. This behavior should be tested in the evaluation set.
+A：当检索结果没有足够证据时，回答生成器应该拒答或要求用户补充资料。这个行为需要写入评估集测试。
 
-Q: How do you choose chunk size and top_k?
+Q：chunk size 和 top_k 怎么选？
 
-A: Start with reasonable defaults, then evaluate retrieval results on a fixed question set. Adjust chunk size, overlap, and top_k based on missed evidence, irrelevant retrieval, and context length.
+A：先用合理默认值，再用固定评估集观察检索结果。根据漏召回、无关召回和上下文过长等问题调整 chunk size、overlap 和 top_k。
 
-## Multi-Agent
+## 多 Agent
 
-Q: Why not use a single agent?
+Q：为什么不用单 Agent？
 
-A: Study planning, retrieval, tutoring, quiz generation, grading, and review scheduling have different responsibilities and output formats. Splitting them into workflow nodes improves testability, debugging, and routing control.
+A：学习计划、检索、讲解、出题、批改和复习安排的职责不同，输入输出格式也不同。拆成工作流节点后，更容易测试、调试、复用和控制路径。
 
-Q: How do you optimize multi-agent orchestration?
+Q：多 Agent 编排如何优化？
 
-A: Use a Router node to classify intent. Simple questions take a short path, while planning, quiz, and review tasks use specialized workflows. Cache repeated retrieval and summaries, validate structured outputs, and store traces for debugging.
+A：用 Router 判断意图。简单问答走短路径，学习计划、测验和复习任务才走专用工作流。重复检索和摘要做缓存，结构化输出先校验，再保存或展示，同时记录 AgentRun 轨迹用于调试。
 
-Q: What prevents the agent system from becoming unstable?
+Q：怎么避免 Agent 系统不稳定？
 
-A: The graph has explicit state, bounded paths, structured node outputs, fallback behavior, and error handling. The frontend does not let arbitrary model decisions directly mutate important data without backend validation.
+A：工作流使用显式 state、有限路径、结构化输出、失败兜底和错误处理。前端不能让模型决策直接改写关键数据，重要数据必须经过后端校验。
 
-## Evaluation
+## 评估
 
-Q: How do you know the RAG system is improving?
+Q：如何判断 RAG 系统真的变好了？
 
-A: Maintain an evaluation set with known questions, expected source material, expected answer points, and actual outputs. Track retrieval hit, citation quality, and hallucination behavior before and after changes.
+A：维护固定评估集，记录问题、期望来源、期望答案要点和实际输出。比较检索命中、引用质量和幻觉情况，再观察修改 chunk、top_k 或 prompt 后是否改善。
 
-## Resume Defense
+## 简历防守
 
-Q: What is the hardest part of the project?
+Q：这个项目最难的地方是什么？
 
-A: Making the system trustworthy and controllable: cited RAG, refusal behavior, structured outputs, agent traceability, and practical routing are more important than simply calling an LLM API.
+A：不是调用 LLM API，而是让系统可信、可控、可解释：带引用的 RAG、拒答策略、结构化输出、Agent 轨迹和实用的路由策略。
 
